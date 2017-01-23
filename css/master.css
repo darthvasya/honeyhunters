@@ -8,7 +8,15 @@ body {
 
 }
 
+.brand {
+  width: 300px;
+}
 
+@media  screen and (max-width : 421px) {
+  .brand {
+    width: 240px;
+  }
+}
 .convert {
   margin-top: 20px;
 
@@ -31,11 +39,27 @@ form .block:nth-child(3) {
   padding-left: 50px;
 }
 
+@media  screen and (max-width : 991px) {
+  form .block:nth-child(2) {
+    padding-right: 15px;
+  }
+
+  form .block:nth-child(3) {
+    padding-left: 15px;
+  }
+}
+
 .form-group label,
 .form-group button {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   font-weight: 100;
+}
+
+.form-group .required {
+  color: #BE393B;
+  font-size: 32px;
+  margin-left: 5px;
 }
 
 .form-group button,
