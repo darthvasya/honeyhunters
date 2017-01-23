@@ -57,18 +57,20 @@ form .block:nth-child(3) {
 }
 
 .form-group .required {
-  color: #BE393B;
-  font-size: 32px;
   margin-left: 5px;
+
+  color: #BE393B;
+
+  font-size: 32px;
 }
 
 .form-group button,
 .form-group button:focus,
 .form-group button:hover,
 .form-group button:active {
-  background-color: #BE393B;
   color: white;
-  border-color: #BE393B;
+  border-color: #BE393B;
+  background-color: #BE393B;
 }
 
 .form-group button {
@@ -100,15 +102,18 @@ form .block:nth-child(3) {
 /*cards block*/
 
 #cards {
+  color: black;
   background-color: #F6F6F7;
-  color: black;
 }
 
 #cards h2 {
-  text-align: center;
   padding: 80px 0px;
-  font-weight: bold;
+
+  text-align: center;
+
   color: #37414E;
+
+  font-weight: bold;
 }
 
 .card {
@@ -116,12 +121,14 @@ form .block:nth-child(3) {
 }
 
 .card header {
+  height: 70px;
+  margin-bottom: 0px;
   padding: 5px 0px;
+
   text-align: center;
+
   color: white;
   background-color: #4B596C;
-  margin-bottom: 0px;
-  height: 70px;
 }
 
 .card:nth-child(2n) header {
@@ -129,16 +136,18 @@ form .block:nth-child(3) {
 }
 
 .card header h3 {
+  font-size: 21px;
   font-weight: 500;
-  font-size: 21px;
 }
 
 .card article {
+  height: 200px;
   margin-top: 0px;
   padding: 20px;
-  background-color: #E9EEF3;
+
   text-align: center;
-  height: 200px;
+
+  background-color: #E9EEF3;
 }
 
 .card:nth-child(2n) article {
@@ -148,8 +157,9 @@ form .block:nth-child(3) {
 
 .card article h4 {
   color: #6D737B;
-  font-weight: bold;
+
   font-size: 22px;
+  font-weight: bold;
 }
 
 .card:nth-child(2n) article h4 {
@@ -157,8 +167,10 @@ form .block:nth-child(3) {
 }
 
 .card article p {
-  color: #767582;
   padding: 20px;
+
+  color: #767582;
+
   font-size: 21px;
 }
 
@@ -180,15 +192,18 @@ footer .brand {
 }
 
 .social div {
-  display: inline-block;
-  margin-top: 15px;
   position: absolute;
   right: 0px;
+
+  display: inline-block;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 5px;
+
   border: 2px solid #454648;
   border-radius: 50% 50%;
-  padding: 5px;
   background-color: #2F3338;
-  margin-bottom: 20px;
 }
 
 .social div:nth-child(1) {
@@ -202,8 +217,9 @@ footer .brand {
 
   .social div {
     position: relative;
-    margin-bottom: 10px;
+
     margin-right: 20px !important;
+    margin-bottom: 10px;
   }
 }
 /*end footer*/
