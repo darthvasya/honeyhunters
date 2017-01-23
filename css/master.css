@@ -166,3 +166,44 @@ form .block:nth-child(3) {
   color: #768275;
 }
 /*end cards block*/
+
+/*footer*/
+
+footer .brand {
+  width: 200px;
+}
+
+@media  screen and (max-width : 421px) {
+  footer .brand {
+    width: 150px;
+  }
+}
+
+.social div {
+  display: inline-block;
+  margin-top: 15px;
+  position: absolute;
+  right: 0px;
+  border: 2px solid #454648;
+  border-radius: 50% 50%;
+  padding: 5px;
+  background-color: #2F3338;
+  margin-bottom: 20px;
+}
+
+.social div:nth-child(1) {
+  margin-right: 70px;
+}
+
+@media  screen and (max-width : 991px) {
+  .social div:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  .social div {
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 20px !important;
+  }
+}
+/*end footer*/
