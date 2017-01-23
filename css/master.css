@@ -94,3 +94,75 @@ form .block:nth-child(3) {
   outline: none;
   box-shadow: none;
 }
+
+/*end contact block*/
+
+/*cards block*/
+
+#cards {
+  background-color: #F6F6F7;
+  color: black;
+}
+
+#cards h2 {
+  text-align: center;
+  padding: 80px 0px;
+  font-weight: bold;
+  color: #37414E;
+}
+
+.card {
+  margin-bottom: 40px;
+}
+
+.card header {
+  padding: 5px 0px;
+  text-align: center;
+  color: white;
+  background-color: #4B596C;
+  margin-bottom: 0px;
+  height: 70px;
+}
+
+.card:nth-child(2n) header {
+  background-color: #58AD52;
+}
+
+.card header h3 {
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.card article {
+  margin-top: 0px;
+  padding: 20px;
+  background-color: #E9EEF3;
+  text-align: center;
+  height: 200px;
+}
+
+.card:nth-child(2n) article {
+  color: #768275;
+  background-color: #DEEBDE;
+}
+
+.card article h4 {
+  color: #6D737B;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card:nth-child(2n) article h4 {
+  color: #58AD52;
+}
+
+.card article p {
+  color: #767582;
+  padding: 20px;
+  font-size: 21px;
+}
+
+.card:nth-child(2n) article p {
+  color: #768275;
+}
+/*end cards block*/
