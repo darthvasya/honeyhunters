@@ -1,0 +1,10 @@
+body {
+  background-color: #2D3136;
+}
+
+.convert {
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 20px;
+}
