@@ -15,15 +15,19 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <img alt="Brand" src="images/1.png" width="300">
-            </a>
+      <div class="row">
+        <nav class="navbar">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="images/1.png" width="300">
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
+          <div class="col-md-1"></div>
+        </nav>
+      </div>
     </div>
 
     <!-- convert picture -->
@@ -46,7 +50,7 @@
         <div class="row">
           <form action="" method="post">
           <div class="col-md-1"></div>
-            <div class="col-md-4">
+            <div class="col-md-5 block">
               <div class="form-group">
                 <label for="name">Имя</label>
                 <input type="text" class="form-control" id="name">
@@ -56,10 +60,7 @@
                 <input type="email" class="form-control" id="email">
               </div>
             </div>
-            <div class="col-md-2">
-
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-5 block">
               <div class="form-group">
                 <label for="comment">Комментарий</label>
                 <textarea id="comment" class="form-control" rows="4"></textarea>

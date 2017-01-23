@@ -19,10 +19,22 @@ body {
 
 
 /* contact block*/
+form {
+  margin-top: 40px;
+}
+
+form .block:nth-child(2) {
+  padding-right: 50px;
+}
+
+form .block:nth-child(3) {
+  padding-left: 50px;
+}
+
 .form-group label,
 .form-group button {
   font-family: 'Roboto', sans-serif;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 100;
 }
 
@@ -35,15 +47,20 @@ body {
   border-color: #BE393B;
 }
 
+.form-group button {
+  position: absolute;
+  right: 15px;
+}
+
 .form-group input,
 .form-group textarea {
-  padding: 25px;
+  padding: 45px;
 
   color: white;
   border-radius: 5px 5px;
   background-color: #2D3136;
 
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 10;
 }
 
