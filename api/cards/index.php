@@ -2,7 +2,6 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-
 $connect = mysql_connect("localhost","root","") or die(mysql_error());
 mysql_select_db("hon_hunt", $connect) or die(mysql_error());
 mysql_query('SET NAMES utf8');
@@ -27,9 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 // start post
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-  $inputJSON = file_get_contents('php://input');
-  $input = json_decode($inputJSON, TRUE); //convert JSON into array\
-  echo json_encode($input);
+  $input = json_decode(file_get_contents('php://input'), true);
 
   $name = $input['name'];
   $email = $input['email'];
@@ -38,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   mysql_query("INSERT INTO Cards
             (Name, Email, Comment)
     VALUES  ('$name', '$email', '$comment')  ") or die(mysql_error());
-
+  echo json_encode(true);
 }
 // end post
 
