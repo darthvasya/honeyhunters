@@ -24,4 +24,23 @@ function showCards() {
   $('#cards_container').html(cards_html.join(""));
 }
 
+let danger_html = "<div id='danger' class='alert alert-danger' role='alert'>Заполните обязательные поля!</div>";
+
+$('body').on('click', '#add', function() {
+    $("#danger").remove();
+    if(!validateForm())
+      $('#cotact_block').after(danger_html);
+});
+
+function validateForm() {
+  let form = document.forms["contact_form"];
+  if(form['name'].value == "" ||
+     form['email'].value == "" ||
+     form['comment'].value == "") {
+    return false;
+  }
+  else
+    return true;
+}
+
 });
