@@ -2,6 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
+
 $connect = mysql_connect("localhost","root","") or die(mysql_error());
 mysql_select_db("hon_hunt", $connect) or die(mysql_error());
 mysql_query('SET NAMES utf8');
